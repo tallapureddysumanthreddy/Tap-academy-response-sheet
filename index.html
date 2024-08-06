@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+</head>
+<body>
+    <img src="download.png" alt="image not found" height="200" width="200">
+    <h1><center>Course Registration Form</center></h1><br>
+    <form action="response.html">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table>
+                <tr>
+                    <td><label for="first_name">First Name</label><br></td>
+                    <td><input type="text" id="first_name" placeholder="ex: Sumanth Reddy" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="last_name">Last Name</label><br></td>
+                    <td><input type="text" id="last_name" placeholder="Tallapu Reddy" name="sur"></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile_number">Mobile Number</label><br></td>
+                    <td><input type="text" id="mobile_number" placeholder="9876543210" name="mob" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label><br></td>
+                    <td><input type="email" id="email" placeholder="abc@gmail.com" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Dob</label><br></td>
+                    <td><input type="date" id="dob" name="dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label><br></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+                        <input type="radio" id="custom" name="gender" value="custom"><label for="custom">Others</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Select Country</label><br></td>
+                    <td>
+                        <select id="country" name="country">
+                            <option value="india">India</option>
+                            <option value="usa">USA</option>
+                            <option value="russia">Russia</option>
+                            <option value="france">France</option>
+                            <option value="canada">Canada</option>
+                            <option value="japan">Japan</option>
+                            <option value="dubai">Dubai</option>
+                        </select><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="picture">Upload Picture</label></td>
+                    <td><input type="file" id="picture" name="picture"><br></td>
+                </tr>
+            </table>
+            <br>
+            <input type="reset" value="Reset">
+        </fieldset>
+        <fieldset>
+            <legend>Course Details</legend>
+            <label for="course">Select Course</label>
+            <select id="course" name="course">
+                <option value="pyfs">Python Full Stack</option>
+                <option value="jfs">Java Full Stack</option>
+                <option value="mern">MERN Stack</option>
+            </select><br>
+            <label for="delivery_mode">Delivery Mode</label>
+            <input type="radio" id="online" name="delivery" value="on"><label for="online">Online</label>
+            <input type="radio" id="offline" name="delivery" value="off"><label for="offline">Offline</label><br>
+            <label for="comments">Comments</label><br>
+            <textarea id="comments" name="comments" cols="20" rows="5"></textarea><br>
+        </fieldset><br>
+        <input type="submit" value="Submit">
+    </form><br>
+    <a href="https://thetapacademy.com/">Click here to visit TAP Academy</a>
+</body>
+</html>
